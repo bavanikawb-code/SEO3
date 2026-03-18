@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FranceVTC – City Transfer VTC Paris | Paris Airport Drop Off VTC</title>
+  <meta name="description" content="FranceVTC – trusted VTC company France. Premium city transfer VTC Paris, Paris airport drop off VTC & online VTC reservation France. Safe, professional, 24/7."/>
+  <meta name="keywords" content="city transfer VTC Paris, Paris airport drop off VTC, online VTC reservation France, VTC service near Paris airport, trusted VTC company France"/>
+  <meta property="og:title" content="FranceVTC – Trusted VTC Company France"/>
+  <meta property="og:description" content="Premium VTC service near Paris airport. Book your city transfer online in seconds."/>
+  <meta property="og:type" content="website"/>
+  <link rel="canonical" href="https://franceairporttaxi.com/about.html"/>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"FranceVTC",
+    "description":"Trusted VTC company France specializing in city transfer VTC Paris and Paris airport drop off VTC",
+    "telephone":"+33-1-23-45-67-89",
+    "address":{"@type":"PostalAddress","addressLocality":"Paris","addressCountry":"FR"},
+    "geo":{"@type":"GeoCoordinates","latitude":48.8566,"longitude":2.3522},
+    "url":"https://franceairporttaxi.com",
+    "openingHours":"Mo-Su 00:00-24:00",
+    "priceRange":"€€",
+    "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"847"}
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body data-theme="light">
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/33123456789" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Navigation -->
+<nav>
+  <a href="#" class="nav-logo" onclick="showSection('home')">
+    <img src="logo.png" alt="FranceVTC Logo" class="nav-logo-img">
+    <span class="nav-logo-text">France<span>VTC</span></span>
+  </a>
+  
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#" onclick="showSection('home')">Home</a></li>
+    <li><a href="#" onclick="showSection('services')">Services</a></li>
+    <li><a href="#" onclick="showSection('about')">About</a></li>
+    <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+    <li><a href="#" class="nav-book" onclick="showSection('booking')">Book Now</a></li>
+  </ul>
+
+  <div class="nav-right">
+    <div class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+      <i class="fas fa-sun"></i>
+      <i class="fas fa-moon"></i>
+      <div class="toggle-ball"></div>
+    </div>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HOME SECTION -->
+<div id="sec-home" class="page-section active">
+  <section id="home">
+    <div class="hero-particles"></div>
+    
+    <div class="hero-body">
+      <div class="hero-left">
+        <div class="hero-badge">
+          <i class="fas fa-star"></i>
+          Trusted VTC Company France
+        </div>
+        
+        <h1 class="hero-title">
+          <span class="blue">Premium</span>
+          <span>City Transfer</span>
+          <span class="gold">Paris</span>
+        </h1>
+        
+        <p class="hero-subtitle">
+          Experience luxury travel with FranceVTC. Professional drivers, premium vehicles, 
+          and seamless online reservations for all your transportation needs in France.
+        </p>
+        
+        <div class="hero-btns">
+          <a href="#" class="btn-primary" onclick="showSection('booking')">
+            <i class="fas fa-calendar-check"></i>
+            Book Your Ride
+          </a>
+          <a href="tel:+33609713638" class="btn-outline">
+            <i class="fas fa-phone-alt"></i>
+            <span>+33 (0)6 09 71 36 38</span>
+          </a>
+        </div>
+        
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">12K+</span>
+            <span class="stat-label">Happy Clients</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">4.9</span>
+            <span class="stat-label">Rating</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">24/7</span>
+            <span class="stat-label">Support</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="hero-right">
+        <div class="car-glow"></div>
+        <div class="video-container">
+          <video 
+            class="hero-video" 
+            autoplay 
+            muted 
+            loop 
+            playsinline
+            poster="https://images.unsplash.com/photo-1555215695-3004980ad54e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+            id="heroVideo"
+          >
+            <source src="carv.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="video-overlay"></div>
+          <button class="video-control" onclick="toggleVideo()" id="videoControl" aria-label="Play/Pause">
+            <i class="fas fa-pause"></i>
+          </button>
+          <div class="car-reflection"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Bar -->
+  <div class="stats-bar">
+    <div class="stats-inner">
+      <div class="stats-item">
+        <div class="number">12K+</div>
+        <div class="label">Rides Completed</div>
+      </div>
+      <div class="stats-item">
+        <div class="number">4.9★</div>
+        <div class="label">Average Rating</div>
+      </div>
+      <div class="stats-item">
+        <div class="number">8+</div>
+        <div class="label">Years Experience</div>
+      </div>
+      <div class="stats-item">
+        <div class="number">24/7</div>
+        <div class="label">Availability</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES SECTION -->
+<div id="sec-services" class="page-section">
+  <section>
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="section-subtitle">Our Services</div>
+        <h2 class="section-title">Premium <span class="blue">VTC</span> Solutions</h2>
+      </div>
+      
+      <div class="services-grid">
+        <a href="#" class="service-card" onclick="showSection('booking')">
+          <div class="service-icon"><i class="fas fa-plane-departure"></i></div>
+          <h3>Airport Transfer</h3>
+          <p>CDG, Orly, Beauvais. Flight tracking, meet & greet, and luggage assistance for stress-free travel.</p>
+          <span class="service-link">Book Now <i class="fas fa-arrow-right"></i></span>
+        </a>
+        
+        <a href="#" class="service-card" onclick="showSection('booking')">
+          <div class="service-icon"><i class="fas fa-city"></i></div>
+          <h3>City Transfer</h3>
+          <p>Seamless point-to-point transfers across Paris and Île-de-France in premium vehicles.</p>
+          <span class="service-link">Book Now <i class="fas fa-arrow-right"></i></span>
+        </a>
+        
+        <a href="#" class="service-card" onclick="showSection('booking')">
+          <div class="service-icon"><i class="fas fa-laptop"></i></div>
+          <h3>Online Reservation</h3>
+          <p>Book in under 60 seconds with instant confirmation and fixed pricing.</p>
+          <span class="service-link">Book Now <i class="fas fa-arrow-right"></i></span>
+        </a>
+        
+        <a href="#" class="service-card" onclick="showSection('booking')">
+          <div class="service-icon"><i class="fas fa-briefcase"></i></div>
+          <h3>Business Travel</h3>
+          <p>Corporate accounts with monthly billing and full trip reporting.</p>
+          <span class="service-link">Book Now <i class="fas fa-arrow-right"></i></span>
+        </a>
+        
+        <a href="#" class="service-card" onclick="showSection('booking')">
+          <div class="service-icon"><i class="fas fa-crown"></i></div>
+          <h3>VIP Service</h3>
+          <p>Luxury vehicles with complimentary water, WiFi, and privacy glass.</p>
+          <span class="service-link">Book Now <i class="fas fa-arrow-right"></i></span>
+        </a>
+        
+        <a href="#" class="service-card" onclick="showSection('booking')">
+          <div class="service-icon"><i class="fas fa-clock"></i></div>
+          <h3>24/7 Service</h3>
+          <p>Round-the-clock availability for any time, any destination.</p>
+          <span class="service-link">Book Now <i class="fas fa-arrow-right"></i></span>
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- BOOKING SECTION -->
+<div id="sec-booking" class="page-section">
+  <section>
+    <div class="section-inner">
+      <div class="booking-layout">
+        <div class="booking-info">
+          <div class="section-subtitle">Quick Reservation</div>
+          <h2 class="section-title">Book Your <span class="blue">VTC</span> Now</h2>
+          <p class="hero-subtitle">Fill in the form and get instant confirmation with driver details.</p>
+          
+          <ul class="booking-features">
+            <li><i class="fas fa-check-circle"></i> Instant price quote & confirmation</li>
+            <li><i class="fas fa-check-circle"></i> Free cancellation up to 24h prior</li>
+            <li><i class="fas fa-check-circle"></i> Flight monitoring for airport pickups</li>
+            <li><i class="fas fa-check-circle"></i> No hidden fees — fixed prices</li>
+            <li><i class="fas fa-check-circle"></i> All major payment methods accepted</li>
+          </ul>
+          
+          <div class="hero-stats booking-stats">
+            <div class="stat-item">
+              <span class="stat-number">4.9/5</span>
+              <span class="stat-label">847 Reviews</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">✓</span>
+              <span class="stat-label">Certified VTC</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="booking-card">
+          <h3>Reservation <span>Form</span></h3>
+          
+          <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" placeholder="Jean Dupont">
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label>Phone</label>
+              <input type="tel" placeholder="+33 6 00 00 00 00">
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" placeholder="email@example.com">
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label>Service Type</label>
+            <select>
+              <option>Airport Transfer</option>
+              <option>City Transfer</option>
+              <option>Long Distance</option>
+              <option>VIP Transfer</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label>Pickup Location</label>
+            <input type="text" placeholder="Address or terminal">
+          </div>
+          
+          <div class="form-group">
+            <label>Destination</label>
+            <input type="text" placeholder="Destination address">
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label>Date</label>
+              <input type="date">
+            </div>
+            <div class="form-group">
+              <label>Time</label>
+              <input type="time">
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label>Passengers</label>
+            <select>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5+</option>
+            </select>
+          </div>
+          
+          <button class="btn-primary btn-block" onclick="handleBooking(this)">
+            <i class="fas fa-check"></i>
+            Confirm Reservation
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ABOUT SECTION -->
+<div id="sec-about" class="page-section">
+  <section>
+    <div class="section-inner">
+      <div class="about-layout">
+        <div class="about-image">
+          <img 
+            src="pic2.jpg" 
+            alt="Luxury car interior - FranceVTC"
+            loading="lazy"
+          />
+          <div class="experience-badge">
+            <div class="number">12K+</div>
+            <div class="text">Happy Clients</div>
+          </div>
+        </div>
+        
+        <div class="about-content">
+          <div class="section-subtitle">About Us</div>
+          <h2 class="section-title">Trusted VTC <span class="blue">Company</span> France</h2>
+          <p class="hero-subtitle">
+            Founded in 2016, FranceVTC has grown to become one of France's most trusted private hire services. 
+            Fully certified and committed to excellence on every journey.
+          </p>
+          
+          <div class="values-grid">
+            <div class="value-item">
+              <div class="value-icon"><i class="fas fa-shield-alt"></i></div>
+              <div>
+                <h4>Safety First</h4>
+                <p>Background-checked drivers</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <div class="value-icon"><i class="fas fa-clock"></i></div>
+              <div>
+                <h4>Always On Time</h4>
+                <p>99.2% on-time rate</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <div class="value-icon"><i class="fas fa-plane"></i></div>
+              <div>
+                <h4>Flight Tracking</h4>
+                <p>Real-time monitoring</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <div class="value-icon"><i class="fas fa-headset"></i></div>
+              <div>
+                <h4>24/7 Support</h4>
+                <p>Always available</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Testimonials -->
+  <section class="testimonials-section">
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="section-subtitle">Testimonials</div>
+        <h2 class="section-title">What Our <span class="blue">Clients Say</span></h2>
+      </div>
+      
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">
+            "Perfect service! Driver was waiting at CDG despite a 40-minute delay. Immaculate car and pure professionalism."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">S</div>
+            <div class="author-info">
+              <h4>Sophie Martin</h4>
+              <p>Business Traveler</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">
+            "Used FranceVTC for a city transfer to Lyon. Punctual, clean, professional. Online reservation was seamless."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">L</div>
+            <div class="author-info">
+              <h4>Luca Rossi</h4>
+              <p>Regular Client</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">
+            "20+ rides, never disappointed. Best VTC service near Paris airport. Truly a trusted company."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">A</div>
+            <div class="author-info">
+              <h4>Amélie Dubois</h4>
+              <p>Corporate Client</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- CONTACT SECTION -->
+<div id="sec-contact" class="page-section">
+  <section>
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="section-subtitle">Get In Touch</div>
+        <h2 class="section-title">Contact <span class="blue">FranceVTC</span></h2>
+      </div>
+      
+      <div class="contact-layout">
+        <div class="contact-info">
+          <a href="tel:+33609713576" class="contact-item">
+            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+            <div>
+              <h4>Phone 24/7</h4>
+              <p>+33 (0)6 09 71 35 76</p>
+            </div>
+          </a>
+          
+          <a href="https://wa.me/33609713576" class="contact-item" target="_blank" rel="noopener">
+            <div class="contact-icon whatsapp-icon"><i class="fab fa-whatsapp"></i></div>
+            <div>
+              <h4>WhatsApp</h4>
+              <p>+33 (0)6 09 71 35 76</p>
+            </div>
+          </a>
+          
+          <a href="mailto:Contact@groupbluevanparis.com" class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <p>Contact@groupbluevanparis.com</p>
+            </div>
+          </a>
+          
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Address</h4>
+              <p>Paris, France</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.95410654616!2d2.264634772937272!3d48.85894658478067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sfr!2sfr!4v1700000000000!5m2!1sfr!2sfr"
+            loading="lazy"
+            title="FranceVTC Paris">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <h3>France<span>VTC</span></h3>
+        <p>Trusted VTC company France. Premium city transfers, Paris airport drop offs, and online VTC reservations — 24/7 across France.</p>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#" onclick="showSection('services')">Airport Transfer</a></li>
+          <li><a href="#" onclick="showSection('services')">City Transfer</a></li>
+          <li><a href="#" onclick="showSection('services')">VIP Service</a></li>
+          <li><a href="#" onclick="showSection('services')">Corporate Travel</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#" onclick="showSection('about')">About Us</a></li>
+          <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+          <li><a href="#">Legal Notice</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Airports</h4>
+        <ul>
+          <li><a href="#" onclick="showSection('booking')">CDG Airport</a></li>
+          <li><a href="#" onclick="showSection('booking')">Orly Airport</a></li>
+          <li><a href="#" onclick="showSection('booking')">Beauvais</a></li>
+          <li><a href="#" onclick="showSection('booking')">Le Bourget</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>© Copyright 2026 France Airport Taxi. All Rights Reserved. Powered by WEBbuilders.LK.</p>
+      <div class="cert-badges">
+        <span class="cert-badge">CPAM Certified</span>
+        <span class="cert-badge">VTC Licensed</span>
+        <span class="cert-badge">DGITM</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Theme Toggle
+  function toggleTheme() {
+    const body = document.body;
+    const currentTheme = body.getAttribute('data-theme');
+    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+    body.setAttribute('data-theme', newTheme);
+    const mapFrame = document.querySelector('.map-container iframe');
+    if (mapFrame) {
+      mapFrame.style.filter = newTheme === 'dark' ? 'grayscale(0.5) invert(0.9)' : 'grayscale(0.2)';
+    }
+  }
+
+  // Page Navigation
+  const sections = ['home', 'services', 'booking', 'about', 'contact'];
+  
+  function showSection(sectionName) {
+    sections.forEach(s => {
+      const element = document.getElementById('sec-' + s);
+      if (element) element.classList.toggle('active', s === sectionName);
+    });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    closeMenu();
+  }
+
+  // Mobile Menu
+  function toggleMenu() {
+    const navLinks = document.getElementById('navLinks');
+    const hamburger = document.getElementById('hamburger');
+    navLinks.classList.toggle('active');
+    hamburger.classList.toggle('open');
+  }
+  
+  function closeMenu() {
+    document.getElementById('navLinks').classList.remove('active');
+    document.getElementById('hamburger').classList.remove('open');
+  }
+
+  // Booking Button Handler
+  function handleBooking(btn) {
+    const originalText = btn.innerHTML;
+    btn.innerHTML = '<i class="fas fa-check"></i> Booking Confirmed!';
+    btn.style.background = 'linear-gradient(135deg, #00c851, #007e33)';
+    setTimeout(() => {
+      btn.innerHTML = originalText;
+      btn.style.background = '';
+    }, 3000);
+  }
+
+  // Video Control
+  function toggleVideo() {
+    const video = document.getElementById('heroVideo');
+    const control = document.getElementById('videoControl');
+    if (video.paused) {
+      video.play();
+      control.innerHTML = '<i class="fas fa-pause"></i>';
+    } else {
+      video.pause();
+      control.innerHTML = '<i class="fas fa-play"></i>';
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const video = document.getElementById('heroVideo');
+    if (video) {
+      video.addEventListener('error', () => {
+        const container = document.querySelector('.video-container');
+        if (container) {
+          container.innerHTML = `
+            <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" 
+              alt="Luxury Mercedes-Benz S-Class" class="hero-video" style="object-fit:cover;width:100%;height:100%;"/>
+            <div class="video-overlay"></div>
+            <div class="car-reflection"></div>`;
+        }
+      });
+      video.play().catch(() => {});
+    }
+
+    // Intersection Observer
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    document.querySelectorAll('.service-card, .testimonial-card, .stat-item, .value-item').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(30px)';
+      el.style.transition = 'all 0.6s ease';
+      observer.observe(el);
+    });
+  });
+
+  // Navbar shadow
+  window.addEventListener('scroll', () => {
+    document.querySelector('nav').style.boxShadow = window.scrollY > 50 ? 'var(--shadow-md)' : 'none';
+  });
+
+  // Close menu on resize
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) closeMenu();
+  });
+</script>
+</body>
+</html>
